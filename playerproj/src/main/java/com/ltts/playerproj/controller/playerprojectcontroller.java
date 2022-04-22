@@ -73,6 +73,8 @@ public class playerprojectcontroller {
 			return new ModelAndView("updateplayer");
 		}
 		
+		
+		
 		@RequestMapping(value="update-player",method=RequestMethod.POST)
 		public ModelAndView m6(HttpServletRequest req) {
 			int noo=Integer.parseInt(req.getParameter("pid"));
@@ -85,7 +87,7 @@ public class playerprojectcontroller {
 			
 			//Application context
 			pb.save(p);
-			return new ModelAndView("success");
+			return new ModelAndView("up");
 			}
 		@RequestMapping("deleteplayer")
 		public ModelAndView m7(HttpServletRequest req) {

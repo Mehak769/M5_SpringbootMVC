@@ -40,5 +40,6 @@
 </tr>
 </c:forEach>
 </table>
+<a href="addplayer">Add Player</a>
 </body>
 </html>
